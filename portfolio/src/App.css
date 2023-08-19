@@ -1,0 +1,71 @@
+:root {
+  --light: rgb(127, 122, 190);
+  --dark: rgb(77, 14, 179);
+}
+body {
+  background-color: rgb(25, 4, 65);
+}
+.header {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(127, 122, 190);
+  height: 150px; 
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px 15px rgb(77, 14, 179);
+}
+.family {
+  width: 200px;
+  height: 200px;
+}
+.about {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 60%;
+  height: 50vh;
+  background-color: var(--light);
+  padding: 20px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 20%;
+  height: 10vh;
+  border-radius: 5px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  list-style: none;
+  color: white;
+}
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  border: 5px inset var(--light);
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--dark);
+}
+
