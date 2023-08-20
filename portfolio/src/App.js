@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
@@ -9,6 +10,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
+    <div>
     <Router>
       <div className="App">
         <Header />
@@ -32,8 +34,9 @@ function App() {
       <Routes>
         <Route path="/Contact" element={<Contact />} />
       </Routes>
-
     </Router>
+    <Footer />
+    </div>
   );
 }
 

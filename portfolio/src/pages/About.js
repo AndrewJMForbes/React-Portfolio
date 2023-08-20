@@ -18,7 +18,7 @@ function About() {
             experiences. I've dabbled in things from altering Magic the
             Gathering playing cards to drawing anime characters on shoes for my
             wife and I and I DO NOT consider myself a professional in either of
-            those areas but I have done it for fun. I've maid vinyl decals, made
+            those areas but I have done it for fun. I've made vinyl decals,
             shirts with heat transfer vinyl, and even dabbled in sublimation
             printing. This page is aimed towards what I can do as a Web
             Developer so I thought I would add some of my other creative hobbies
