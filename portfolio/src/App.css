@@ -5,10 +5,29 @@
 body {
   background-color: rgb(25, 4, 65);
 }
+p {
+  width: 80%;
+vertical-align: auto;
+margin-left: auto;
+margin-right: auto;
+}
+h2 {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  border: inset 5px white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 .header {
   padding: 0;
   margin: 0;
 }
+
 .container {
   display: flex; 
   justify-content: center;
@@ -24,48 +43,198 @@ body {
   border-radius: 5px;
   box-shadow: 0px 0px 25px 15px rgb(77, 14, 179);
 }
-.family {
-  width: 200px;
-  height: 200px;
-}
-.about {
+
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   margin-left: auto;
   margin-right: auto; 
-  width: 60%;
-  height: 50vh;
+  margin-top: 30px;
+  width: 95%;
+  height: 40%;
   background-color: var(--light);
-  padding: 20px;
+  border-radius: 5px;
+  padding: 10px;
+
 }
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  width: 20%;
-  height: 10vh;
+.family{
+  width: 400px;
+  height: 400px;
   border-radius: 5px;
 }
-ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2em;
-  list-style: none;
-  color: white;
+.family2 {
+  width: 600px;
+  height: 400px;
+  border-radius: 5px;
 }
-li{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 30px;
+.nav-links {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 100%;
+}
+ a {
+  color: white;
+   font-size: 2em;
+  text-decoration: none;
+  margin: 10px;
   border: 5px inset var(--light);
   border-radius: 5px;
   padding: 5px;
   background-color: var(--dark);
+  
 }
+.page-title {
+   color: white;
+   text-align: center;
+   font-size: 3em;
+}
+.projectContainer1,
+.projectContainer2,
+.projectContainer3,
+.projectContainer4 {
+  background-color: var(--light);
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+  width: 30%;
+  height: 600px;
+  border-radius: 5px;
+}
+.projectContainer1 a,
+.projectContainer2 a,
+.projectContainer3 a,
+.projectContainer4 a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  height: 10%;
+ text-decoration: none;
+ border: 5px inset black;
+ border-radius: 5px;
+ background-color: var(--dark);
+}
+.projectMainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ border-radius: 5px;
+  height: 100vh;
+  margin-top: 50px;
+}
+ .demoPhoto {
+  width: 95%;
+  height: 80%;
+  border-radius: 5px;
+}
+.demoPhoto:hover {
+  transform: scale(1.1);
+  transition: 3ms;
+}
+.sites a{
+  text-align: center;
+}
+.homeContainer {
+  background-color: var(--light);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+  width: 30%;
+  height: 70%;
+  border-radius: 5px;
+}
+.mainHomeContainer {
+  width: 80%;
+  height: 70%;
+  margin-left: auto; 
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+.site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+.sitePhoto {
+  width: 100%;
+  height: 100%;
+}
+a:hover {
+  background-color: rgb(43, 5, 75);
+}
+.contactContainer {
+  display: block;
+  width: 100%;
 
+}
+.contactLinks a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+}
+fieldset {
+  width: 95%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  padding-top: 30px;
+
+}
+legend {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+}
+label {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 1.5%;
+
+}
+input {
+  width: 25%;
+  height: 25px;
+margin-right: 15px;
+border-radius: 5px;
+}
+::placeholder {
+  text-align: center;
+  font-size: 1.5em;
+}
+.github,
+.linkedin,
+.email,
+.indeed,
+.twitter {
+  width: 10%;
+  height: 10%;
+  margin: 10px;
+  border-radius: 500px;
+}
