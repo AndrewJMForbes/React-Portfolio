@@ -2,39 +2,47 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import Home from "./pages/Home";
+import Reference from "./pages/Reference";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
 
 
 function App() {
   return (
     <div>
+<div className="bodyContainer">
     <Router>
       <div className="App">
         <Header />
-        {/* <Img /> */}
         <nav className="nav-links">
-          <Link to="/">Home</Link>
+          <Link to="/">About Me</Link>
           <Link to="/Projects">Projects</Link>
-          <Link to="/About">About</Link>
+          <Link to="/Reference">Reference Tools</Link>
+          <Link to="/Resume">Resume</Link>
           <Link to="/Contact">Contact</Link>
         </nav>
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<About />} />
       </Routes>
       <Routes>
         <Route path="/Projects" element={<Projects />} />
       </Routes>
       <Routes>
-        <Route path="/About" element={<About />} />
+        <Route path="/Reference" element={<Reference />} />
       </Routes>
       <Routes>
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Routes>
+        <Route path="/Resume" element={<Resume />} />
+      </Routes>
     </Router>
+
+    </div>
+    <Footer />
     </div>
   );
 }

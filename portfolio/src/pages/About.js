@@ -4,7 +4,7 @@ import family2 from "../images/family.jpg";
 function About() {
   return (
     <div>
-      <h1 className="page-title">About</h1>
+      <h1 className="page-title">About Me</h1>
 
       <div className="aboutContainer">
         <img className="family" src={family1} alt="something" />

@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <div className="container">
-        <h1>The Portfolio of Andrew Forbes created with Reactjs</h1><img className="reactLogo" src={reactlogo} alt="something" />
+        <h1>The Portfolio of Andrew Forbes created with Reactjs<a href="https://react.dev/"><img  className="reactLogo" src={reactlogo} alt="something" /></a></h1>
         
       </div>
     </header>

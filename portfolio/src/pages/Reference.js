@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div>
-      <h1 className="page-title">Home</h1>
     <h2>⇩ These are sites that I use as reference tools ⇩</h2>
       <div className="mainHomeContainer">
         <div className="homeContainer">

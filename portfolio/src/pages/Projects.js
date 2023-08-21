@@ -18,7 +18,6 @@ import { Link } from "react-router-dom"
 function Projects() {
   return (
     <div> 
-      <h1 className="page-title">Projects</h1>
 
       <h2>Take a look at the sites I've worked on! 👀</h2>
     <div className="mainContainer">
