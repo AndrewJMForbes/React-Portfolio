@@ -40,7 +40,7 @@ h2 {
   text-align: center;
   color: rgb(255, 255, 255);
   background-color: var(--dark);
-  height: 20vh;
+  height: 30vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -52,8 +52,18 @@ h2 {
   border: none;
   background-color: none;
 }
-h1 a:hover {
-  background-color: none;
+.messageContainer {
+  display: flex;
+  justify-content: center;
+  font-size: 3vw;
+  color: white;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 200px;
+  width: 30%;
+  height: 80vh;
+  background-color: var(--light);
 }
 .aboutContainer {
   display: flex;
@@ -194,6 +204,23 @@ a:hover {
   font-size: 1.5em;
   text-align: center;
 }
+.submit {
+  color: white;
+  font-size: 1.5vw;
+  text-align: center;
+  width: 50%;
+  height: 7vh;
+  text-decoration: none;
+  margin: 10px;
+  border: 5px inset var(--light);
+  border-radius: 25px 50px 25px 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: var(--dark);
+}
+.submit:hover {
+  cursor: pointer;
+}
 input {
   display: block;
   width: 80%;
@@ -227,7 +254,7 @@ form {
   animation-duration: 800ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  transform: rotate(35deg);
+  transform: rotate(3deg);
   transform: rotate(0.3rad);
   transform: rotate(3grad);
   transform: rotate(0.03turn);
@@ -236,14 +263,78 @@ form {
   width: 80px;
   height: 80px;
   border-radius: 50px;
-  margin: 60px;
+  margin: 90px;
 }
 .react{
 border: none;
 background-color: none;
 }
-.reactLogo {
+.ring1 {
+  height: 8vw;
+  width:8vw;
+  border-radius: 100px;
+  animation-name: spin2;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: rotate(3deg);
+  transform: rotate(0.3rad);
+  transform: rotate(3grad);
+  transform: rotate(0.03turn);
+  margin-left: 50px;
+  z-index: 10;
+  margin-right: -193px;
+  margin-bottom: -6px;
+}
+.ring2 {
+  height: 10vw;
+  width: 10vw;
+  border-radius: 100px;
+  animation-name: spin3;
+  animation-duration: 3500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: rotate(3deg);
+  transform: rotate(0.3rad);
+  transform: rotate(3grad);
+  transform: rotate(0.03turn);
+  box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
+  0px 0px 10px 5px rgb(117, 197, 243), 0px 0px 15px 5px rgb(78, 186, 248),
+  0px 0px 25px 5px rgb(0, 0, 0), 0px 0px 35px 5px rgb(0, 0, 0),
+  0px 0px 45px 5px rgb(0, 0, 0);
   margin-left: 20px;
+  margin-right: -135px;
+  margin-bottom: -25px;
+  background-color: white;
+  z-index: 5;
+  opacity: .4;
+}
+.contactRing {
+  /* display: none; */
+  height:4. 5vw;
+  width:4.5vw;
+  border-radius: 100px;
+  animation-name: spin2;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: rotate(3deg);
+  transform: rotate(0.3rad);
+  transform: rotate(3grad);
+  transform: rotate(0.03turn);
+  margin-left: 50px;
+  z-index: 100;
+  margin-left: -173px;
+  margin-bottom: 88px;
+  box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
+  0px 0px 15px 5px rgb(255, 255, 255),
+  0px 0px 25px 5px rgb(78, 186, 248);
+ ;
+}
+
+.reactLogo {
+  margin-left: px;
+  margin-bottom: 30px;
   height: 4vw;
   width: 4vw;
   border-radius: 100px;
@@ -251,7 +342,7 @@ background-color: none;
     0px 0px 10px 5px rgb(117, 197, 243), 0px 0px 15px 5px rgb(78, 186, 248),
     0px 0px 25px 5px rgb(0, 0, 0), 0px 0px 35px 5px rgb(0, 0, 0),
     0px 0px 45px 5px rgb(0, 0, 0);
-  animation-name: spin;
+  animation-name: spin1;
   animation-duration: 5000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
@@ -281,7 +372,23 @@ background-color: none;
   background-color: var(--light);
 }
 
-@keyframes spin {
+@keyframes spin1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spin3 {
   from {
     transform: rotate(0deg);
   }
@@ -401,6 +508,7 @@ background-color: none;
     width: 100vw;
     background-color: var(--light);
   }
+ 
   .reactLogo {
     margin-left: 20px;
     height: 10%;
