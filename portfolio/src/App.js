@@ -7,7 +7,6 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
-import Messages from "./pages/Messages";
 
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
           <Link to="/Reference">Reference Tools</Link>
           <Link to="/Resume">Resume</Link>
           <Link to="/Contact">Contact</Link>
-          <Link to="/Messages">MessageBoard</Link>
 
         </nav>
       </div>
@@ -42,9 +40,7 @@ function App() {
       <Routes>
         <Route path="/Resume" element={<Resume />} />
       </Routes>
-      <Routes>
-        <Route path="/Messages" element={<Messages />} />
-      </Routes>
+     
     </Router>
 
     </div>

@@ -43,13 +43,12 @@ function Projects() {
       <Link to="#"><img className="demoPhoto" src={Screenshot9} alt='something'/></Link>
       </div>
       <div className="projectContainer">  
-      <a className="sites" href="#">RJD Machining LLC (Future Project)</a>
-      <Link to="#"><img className="demoPhoto" src={Screenshot4} alt='something'/></Link>
-      </div>
-
-      <div className="projectContainer">  
       <a className="sites" href="#">SC-B Consulting (Future Project)</a>
       <Link to="#"><img className="demoPhoto" src={Screenshot10} alt='something'/></Link>
+      </div>
+      <div className="projectContainer">  
+      <a className="sites" href="#">RJD Machining LLC (Future Project)</a>
+      <Link to="#"><img className="demoPhoto" src={Screenshot4} alt='something'/></Link>
       </div>
       <div className="projectContainer">  
       <a className="sites" href="#">Future Project</a>

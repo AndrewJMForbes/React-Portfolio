@@ -7,8 +7,10 @@ function Header() {
   return (
     <header>
       <div className="container">
-        <h1>The Portfolio of Andrew Forbes created with Reactjs</h1><a href="https://react.dev/"><img  className="ring1" src={ring} alt="something" /><img  className="ring2" src={ring} alt="something" /><img  className="reactLogo" src={reactlogo} alt="something" /></a>
         
+        <h1>The Portfolio of Andrew Forbes created with Reactjs</h1>
+        <div className="animation"><a href="https://react.dev/"><img  className="ring1" src={ring} alt="something" /><img  className="ring2" src={ring} alt="something" /><img  className="reactLogo" src={reactlogo} alt="something" /></a>
+        </div>
       </div>
     </header>
   )
