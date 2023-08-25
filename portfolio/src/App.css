@@ -15,8 +15,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-h1 {
-}
+
 h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
@@ -27,6 +26,58 @@ h2 {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
+}
+.basicInfo {
+  width: 20%;
+  color: white;
+  font-size: 1.25vw;
+  text-align: left;
+  background-image: radial-gradient(#042861, #000000);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px;
+}
+.basicInfo h1 {
+  font-size: 3vw;
+  text-align: center;
+}
+.resumeContainer {
+  font-family:'Times New Roman', Times, serif;
+  border: 1px solid white;
+}
+.resumeContact {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.resumeContainer a,
+.resumeContact a {
+  cursor: pointer;
+}
+.resume {
+  width: 20%;
+  color: white;
+  font-size: 1.25vw;
+  text-align: left;
+  background-image: radial-gradient(#042861, #000000);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px;
+}
+.resume ul {
+  list-style: none;
+}
+.resume h2 {
+  margin-bottom: -25px;
+  text-decoration: underline;
+}
+.resume h3 {
+  text-align: center;
+  text-decoration: underline;
+  border: 1px solid white;
+  width: 100%;
+}
+.location {
+margin-right: 10px;
 }
 .header {
   padding: 0;
@@ -83,7 +134,9 @@ h2 {
   margin-bottom: 100px;
   width: 95%;
   height: 40%;
-  background-color: rgb(43, 170, 43);
+  border: 1px solid rgb(255, 255, 255);
+  background-image: radial-gradient(#042861, #000000);
+
   border-radius: 5px;
   padding: 10px;
 }
@@ -114,11 +167,12 @@ h2 {
   margin: 10px;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 25px 50px 25px 50px;
+  background-image: radial-gradient(#042861, #000000);
+
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
-  background-image: radial-gradient(#042861, #000000);
 }
 a {
  
@@ -231,6 +285,12 @@ a:hover {
 .submit:hover {
   cursor: pointer;
 }
+.formContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
 input {
   display: block;
   width: 80%;
@@ -321,8 +381,8 @@ background-color: none;
   opacity: .4;
 }
 .contactRing {
-  height: 4.5vw;
-  width: 4.5vw;
+  height: 4vw;
+  width: 4vw;
   border-radius: 100px;
   animation-name: spin2;
   animation-duration: 4000ms;
@@ -334,8 +394,8 @@ background-color: none;
   transform: rotate(0.03turn);
   margin-left: 50px;
   z-index: 100;
-  margin-left: -173px;
-  margin-bottom: 88px;
+  margin-left: -169px;
+  margin-bottom: 91px;
   box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
   0px 0px 15px 5px rgb(255, 255, 255),
   0px 0px 25px 5px rgb(78, 186, 248);
@@ -381,6 +441,9 @@ background-color: none;
   width: 99.4vw;
   box-shadow: 0px 0px 10px 1px rgb(255, 255, 255);
   background-image: radial-gradient(#042861, #000000);
+}
+.footerContainer a {
+  margin: 50px;
 }
 
 @keyframes spin1 {
@@ -483,13 +546,13 @@ background-color: none;
     margin-right: auto;
     margin-left: auto;
     text-decoration: none;
-    border: 5px inset var(--light);
-    border-radius: 25px 50px 25px 50px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: var(--dark);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px 50px 25px 50px;
+    background-image: radial-gradient(#042861, #000000);
   }
   .contactContainer {
     display: flex;
@@ -519,7 +582,27 @@ background-color: none;
     width: 100vw;
     background-color: var(--light);
   }
- 
+  .contactRing {
+    height: 4.5vw;
+    width: 4.5vw;
+    border-radius: 100px;
+    animation-name: spin2;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(3deg);
+    transform: rotate(0.3rad);
+    transform: rotate(3grad);
+    transform: rotate(0.03turn);
+    margin-left: 50px;
+    z-index: 100;
+    margin-left: -173px;
+    margin-bottom: 88px;
+    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
+    0px 0px 15px 5px rgb(255, 255, 255),
+    0px 0px 25px 5px rgb(78, 186, 248);
+   ;
+  }
   .reactLogo {
     margin-left: 20px;
     height: 10%;
@@ -559,16 +642,36 @@ background-color: none;
     font-size: 3.5vw;
     height: 25%;
   }
-  .page-title {
+  /* .page-title {
   display: none;
-  }
+  } */
   .nav-links {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     width: 100%;
   }
-  
+  .contactRing {
+    height: 4.5vw;
+    width: 4.5vw;
+    border-radius: 100px;
+    animation-name: spin2;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(3deg);
+    transform: rotate(0.3rad);
+    transform: rotate(3grad);
+    transform: rotate(0.03turn);
+    margin-left: 50px;
+    z-index: 100;
+    margin-left: -173px;
+    margin-bottom: 88px;
+    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
+    0px 0px 15px 5px rgb(255, 255, 255),
+    0px 0px 25px 5px rgb(78, 186, 248);
+   ;
+  }
   .nav-links a {
     display: block;
     color: white;
@@ -578,13 +681,16 @@ background-color: none;
     margin-right: auto;
     margin-left: auto;
     text-decoration: none;
-    border: 5px inset var(--light);
-    border-radius: 25px 50px 25px 50px;
+   
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: var(--dark);
+   
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px 50px 25px 50px;
+    background-image: radial-gradient(#042861, #000000);
+    
   }
   .contactContainer {
     display: flex;
@@ -665,7 +771,98 @@ background-color: none;
     margin-bottom: 50px;
     width: 100%;
   }
-  
+  /* --------------------------------------------------------- */
+  .contactRing {
+    height: 8.25vw;
+    width: 8.25vw;
+    border-radius: 100px;
+    animation-name: spin2;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(3deg);
+    transform: rotate(0.3rad);
+    transform: rotate(3grad);
+    transform: rotate(0.03turn);
+    margin-left: 50px;
+    margin-left: -109.5px;
+    margin-bottom: 31px;
+    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
+    0px 0px 15px 5px rgb(255, 255, 255),
+    0px 0px 25px 5px rgb(78, 186, 248);
+   ;
+  }
+  .homeContainer,
+.projectContainer,
+.videoContainer{
+  background-image: radial-gradient(#042861, #000000);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  border-radius: 5px;
+}
+.homeContainer a,
+.projectContainer a,
+.videoContainer a{
+  width: 100vw;
+  text-align: center;
+  color: white;
+  font-size: 3vw;
+  text-decoration: none;
+  margin: 10px;
+ border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px 50px 25px 50px;
+  padding: 10px;
+  background-image: radial-gradient(#042861, #000000);
+}
+  .react{
+    border: none;
+    background-color: none;
+    }
+    .ring1 {
+      height: 10vw;
+      width: 10vw;
+      border-radius: 100px;
+      animation-name: spin2;
+      animation-duration: 4000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      transform: rotate(3deg);
+      transform: rotate(0.3rad);
+      transform: rotate(3grad);
+      transform: rotate(0.03turn);
+      margin-left: 50px;
+      z-index: 10;
+      margin-right: -130px;
+      margin-bottom: -7px;
+    }
+    .ring2 {
+      height: 14vw;
+      width: 14vw;
+      border-radius: 100px;
+      animation-name: spin3;
+      animation-duration: 3500ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      transform: rotate(3deg);
+      transform: rotate(0.3rad);
+      transform: rotate(3grad);
+      transform: rotate(0.03turn);
+      box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
+      0px 0px 10px 5px rgb(117, 197, 243), 0px 0px 15px 5px rgb(78, 186, 248),
+      0px 0px 25px 5px rgb(0, 0, 0), 0px 0px 35px 5px rgb(0, 0, 0),
+      0px 0px 45px 5px rgb(0, 0, 0);
+      margin-left: 20px;
+      margin-right: -50px;
+      margin-bottom: -25px;
+      background-color: white;
+      z-index: 5;
+      opacity: .4;
+    }
   .nav-links a {
     color: white;
     font-size: 3vw;
@@ -674,13 +871,15 @@ background-color: none;
     margin-right: auto;
     margin-left: auto;
     text-decoration: none;
-    border: 5px inset var(--light);
-    border-radius: 25px 50px 25px 50px;
+    
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: var(--dark);
+  
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px 50px 25px 50px;
+    background-image: radial-gradient(#042861, #000000);
   }
   .contactContainer {
     display: flex;
@@ -696,7 +895,6 @@ background-color: none;
   .contact {
     width: 80px;
     height: 80px;
-    margin: 50px;
     border-radius: 50px;
   }
   .footer {
@@ -711,7 +909,8 @@ background-color: none;
     background-color: var(--light);
   }
   .reactLogo {
-    margin-left: 20px;
+    margin-left: -42px;
+    margin-bottom: 13px;
     height: 10%;
     width: 10%;
     border-radius: 100px;
