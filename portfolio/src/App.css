@@ -76,7 +76,8 @@ h2 {
   border: 1px solid white;
   width: 100%;
 }
-.location {
+.location,
+.phone {
 margin-right: 10px;
 }
 .header {

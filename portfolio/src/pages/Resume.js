@@ -10,9 +10,9 @@ function Resume() {
           <h1 className="resumeName">Andrew Forbes</h1>
           <h3>Full Stack Web Developer</h3>
           <a href="mailto:vudo8585@gmail.com"><h5 >✉️vudo8585@gmail.com</h5></a>
-          <h5>📞(217)480-0408</h5>
+          <h5><span className="phone">📞</span>(217)480-0408</h5>
           <h5><span className="location">📍</span>Champaign, IL</h5>
-          <a href="mailto:vudo8585@gmail.com"><h5><img className="resumeContact" src={github} alt="something" />GitHub</h5></a>
+          <a href="https://github.com/AndrewJMForbes"><h5><img className="resumeContact" src={github} alt="something" />GitHub</h5></a>
           </div>
           <div className="resume">
           <h2>Technical Skills</h2>
