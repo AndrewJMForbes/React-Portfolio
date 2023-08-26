@@ -1,7 +1,7 @@
 import github from "../images/github.png";
 
 
-function Resume(props) {
+function Resume() {
   return (
     <div className="box">
       <h1 className="page-title"><a className="resumeLink" href="https://drive.google.com/file/d/1EglTyyTMHu1oUShwUGEr2kGzdOLTxut9/view" download="Resume.pdf">Download my resume Here! 📄</a></h1>
