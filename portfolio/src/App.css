@@ -1,10 +1,8 @@
-:root {
-  --light: rgb(145, 241, 145);
-  --dark: rgb(43, 170, 43);
-}
+
 body {
   font-family: "Barriecito", cursive;
   background-image: radial-gradient(#042861, #000000);
+  background-size: cover;
   min-height: 100vh;
 }
 p {
@@ -26,23 +24,35 @@ h2 {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
+  text-decoration: underline;
+}
+.resumeLink {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .basicInfo {
   width: 20%;
+  height: 30%;
   color: white;
   font-size: 1.25vw;
   text-align: left;
   background-image: radial-gradient(#042861, #000000);
   border: 1px solid rgb(255, 255, 255);
-  padding: 20px;
+  padding: 10px;
+  border-radius: 5px;
 }
-.basicInfo h1 {
-  font-size: 3vw;
-  text-align: center;
-}
+
 .resumeContainer {
   font-family:'Times New Roman', Times, serif;
-  border: 1px solid white;
+  display: flex;
+  width: 100%;
+  background-image: radial-gradient(#042861, #000000);
+
+
 }
 .resumeContact {
   width: 40px;
@@ -50,21 +60,35 @@ h2 {
   border-radius: 50px;
   margin-right: 10px;
 }
+.careerEd {
+   width: 60%;
+  color: white;
+  font-size: 1.25vw;
+  text-align: center;
+}
 .resumeContainer a,
 .resumeContact a {
   cursor: pointer;
 }
 .resume {
   width: 20%;
+  height: 100%;
   color: white;
   font-size: 1.25vw;
   text-align: left;
   background-image: radial-gradient(#042861, #000000);
   border: 1px solid rgb(255, 255, 255);
   padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+
 }
 .resume ul {
   list-style: none;
+}
+.resumeName {
+  font-size: 3vw;
+  color: white;
 }
 .resume h2 {
   margin-bottom: -25px;
@@ -72,9 +96,9 @@ h2 {
 }
 .resume h3 {
   text-align: center;
-  text-decoration: underline;
   border: 1px solid white;
   width: 100%;
+  border-radius: 5px;
 }
 .location,
 .phone {
@@ -471,31 +495,107 @@ background-color: none;
     transform: rotate(360deg);
   }
 }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 415px) {
   body {
     font-family: "Barriecito", cursive;
     background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 100vh;
   }
-  h2 {
+  h1 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     color: white;
-    font-size: 6vw;
+    font-size: 10vw;
     text-align: center;
-    padding: 20px;
-    width: 40%;
+    padding: 25px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
+  h2{
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    color: white;
+    font-size: 7vw;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 7vw;
+    width: 100%;
+    vertical-align: auto;
+    margin-left: auto;
+  }
+  .box {
+    width: 100%;
+    
+  }
   .container{
     display: flex;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     flex-wrap: wrap;
     font-size: 3.5vw;
     line-height: 4em;
     height: 25%;
   }
+  .resumeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .basicInfo h1{
+    font-size: 12vw;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid white;
+  }
+  .careerEd {
+    width: 100%;
+    border: none;
+  }
+  .resume {
+    background-color: #fff;
+    width: 88%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .resume h3 {
+    width: 80%;
+    border-bottom: 2px solid white;
+  }
+  .resume ul {
+    font-size: 7vw;
+    list-style: disc;
+    line-height: 8vh;
+  }
+  .basicInfo {
+    font-size: 6vw;
+     width: 100%;
+  }
   .mainHomeContainer,
-.mainContainer {
+.mainContainer,
+.aboutContainer {
   display: block;
   width: 100%;
   height: 70%;
@@ -508,11 +608,13 @@ background-color: none;
 .homeContainer,
 .projectContainer,
 .videoContainer{
-  background-color: var(--light);
   margin: 5px;
-  width: 100%;
+  width: 90%;
   height: 70%;
   border-radius: 5px;
+}
+.sites a {
+  font-size: 20px;
 }
 .homeContainer a,
 .projectContainer a,
@@ -520,7 +622,7 @@ background-color: none;
   width: 100vw;
   text-align: center;
   color: white;
-  font-size: 1vw;
+  font-size: 8vw;
   text-decoration: none;
   margin: 10px;
   border: 5px inset var(--light);
@@ -528,6 +630,30 @@ background-color: none;
   padding: 10px;
   background-color: var(--dark);
 }
+.demoPhoto {
+  height: 45vh;
+}
+.family {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.family2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.aboutContainer {
+  border: none;
+}
+.aboutContainer p {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
   .page-title {
   display: none;
   }
@@ -536,14 +662,18 @@ background-color: none;
     margin-right: auto;
     margin-top: 50px;
     width: 100%;
+    
   }
   
   .nav-links a {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-size: 5vw;
+    font-size: 6vw;
     text-align: center;
-    width: 50vw;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     text-decoration: none;
@@ -566,245 +696,155 @@ background-color: none;
     background-color: var(--light);
     margin-bottom: 50px;
   }
-  .contact {
-    width: 40px;
-    height: 40px;
-    margin: 10px;
+  .contact{
+    width: 20px;
+    height: 20px;
     border-radius: 50px;
   }
   .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 0;
-    margin-bottom: -10px;
-    height: 15vh;
-    width: 100vw;
-    background-color: var(--light);
+    display: none;
   }
-  .contactRing {
-    height: 4.5vw;
-    width: 4.5vw;
-    border-radius: 100px;
-    animation-name: spin2;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: rotate(3deg);
-    transform: rotate(0.3rad);
-    transform: rotate(3grad);
-    transform: rotate(0.03turn);
-    margin-left: 50px;
-    z-index: 100;
-    margin-left: -173px;
-    margin-bottom: 88px;
-    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
-    0px 0px 15px 5px rgb(255, 255, 255),
-    0px 0px 25px 5px rgb(78, 186, 248);
-   ;
+
+  .footerContainer {
+    display: none;
   }
-  .reactLogo {
-    margin-left: 20px;
-    height: 10%;
-    width: 10%;
-    border-radius: 100px;
-    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
-      0px 0px 10px 5px rgb(117, 197, 243), 0px 0px 15px 5px rgb(78, 186, 248),
-      0px 0px 25px 5px rgb(0, 0, 0), 0px 0px 35px 5px rgb(0, 0, 0),
-      0px 0px 45px 5px rgb(0, 0, 0);
-    animation-name: spin;
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: rotate(3deg);
-    transform: rotate(0.3rad);
-    transform: rotate(3grad);
-    transform: rotate(0.03turn);
+ 
+  .contactRing,
+  .ring,
+  .reactLogo,
+  .ring1,
+  .ring2 {
+    display: none;
   }
   .reactLogo:hover{
-    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
-    0px 0px 10px 5px rgb(255, 255, 255), 
-    0px 0px 15px 5px rgb(255, 255, 255),
-    0px 0px 25px 5px rgb(78, 186, 248), 
-    0px 0px 35px 5px rgb(78, 186, 248),
-    0px 0px 45px 5px rgb(78, 186, 248);
+    display: none;
   }
-}
-@media screen and (min-width: 668px) and (max-width: 1024px) {
-  body {
-    font-family: "Barriecito", cursive;
-    background-color: rgb(0, 0, 0);
-    min-height: 100vh;
-  }
-  .container{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 3.5vw;
-    height: 25%;
-  }
-  /* .page-title {
-  display: none;
-  } */
-  .nav-links {
-    margin-left: auto;
-    margin-right: auto;
+  .submit {
+    width: 100%;
+    height: 100px;
     margin-top: 50px;
-    width: 100%;
-  }
-  .contactRing {
-    height: 4.5vw;
-    width: 4.5vw;
-    border-radius: 100px;
-    animation-name: spin2;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: rotate(3deg);
-    transform: rotate(0.3rad);
-    transform: rotate(3grad);
-    transform: rotate(0.03turn);
-    margin-left: 50px;
-    z-index: 100;
-    margin-left: -173px;
-    margin-bottom: 88px;
-    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
-    0px 0px 15px 5px rgb(255, 255, 255),
-    0px 0px 25px 5px rgb(78, 186, 248);
-   ;
-  }
-  .nav-links a {
-    display: block;
-    color: white;
-    font-size: 4vw;
-    text-align: center;
-    width: 50vw;
-    margin-right: auto;
-    margin-left: auto;
-    text-decoration: none;
-   
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-   
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 25px 50px 25px 50px;
-    background-image: radial-gradient(#042861, #000000);
-    
-  }
-  .contactContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80vh;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--light);
-    margin-bottom: 50px;
-  }
-  .contact {
-    width: 50px;
-    height: 50px;
-    margin: 30px;
-    border-radius: 50px;
-  }
-  .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 0;
-    margin-bottom: -10px;
-    height: 15vh;
-    width: 100vw;
-    background-color: var(--light);
-  }
-  .reactLogo {
-    margin-left: 20px;
-    height: 80px;
-    width: 80px;
-    margin-top: 10px;
-    border-radius: 100px;
-    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
-      0px 0px 10px 5px rgb(117, 197, 243), 0px 0px 15px 5px rgb(78, 186, 248),
-      0px 0px 25px 5px rgb(0, 0, 0), 0px 0px 35px 5px rgb(0, 0, 0),
-      0px 0px 45px 5px rgb(0, 0, 0);
-    animation-name: spin;
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: rotate(3deg);
-    transform: rotate(0.3rad);
-    transform: rotate(3grad);
-    transform: rotate(0.03turn);
-  }
-  .reactLogo:hover{
-    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
-    0px 0px 10px 5px rgb(255, 255, 255), 
-    0px 0px 15px 5px rgb(255, 255, 255),
-    0px 0px 25px 5px rgb(78, 186, 248), 
-    0px 0px 35px 5px rgb(78, 186, 248),
-    0px 0px 45px 5px rgb(78, 186, 248);
+    font-size: 5vw;
   }
 }
-@media screen and (max-width: 1025px) {
+@media screen and (min-width: 416px) and (max-width: 911px) {
   body {
     font-family: "Barriecito", cursive;
     background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 100vh;
+  }
+  
+  h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2{
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    color: white;
+    font-size: 7vw;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  .about {
+    font-size: 6vw;
   }
   .container{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 3vw;
     line-height: 4em;
-    height: 10%;
+    height: 50vh;
   }
-  .page-title {
-  display: none;
-  }
-  .nav-links {
+  .resumeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 100vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  }
+  .basicInfo h1{
+    font-size: 12vw;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid white;
+  }
+  .careerEd {
     width: 100%;
+    border: none;
   }
-  /* --------------------------------------------------------- */
-  .contactRing {
-    height: 8.25vw;
-    width: 8.25vw;
-    border-radius: 100px;
-    animation-name: spin2;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: rotate(3deg);
-    transform: rotate(0.3rad);
-    transform: rotate(3grad);
-    transform: rotate(0.03turn);
-    margin-left: 50px;
-    margin-left: -109.5px;
-    margin-bottom: 31px;
-    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
-    0px 0px 15px 5px rgb(255, 255, 255),
-    0px 0px 25px 5px rgb(78, 186, 248);
-   ;
+  .resume {
+    background-color: #fff;
+    width: 88%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .homeContainer,
-.projectContainer,
-.videoContainer{
-  background-image: radial-gradient(#042861, #000000);
+  .resume h3 {
+    width: 80%;
+    border-bottom: 2px solid white;
+  }
+  .resume ul {
+    font-size: 7vw;
+    list-style: disc;
+    line-height: 8vh;
+  }
+  .basicInfo {
+    font-size: 6vw;
+     width: 100%;
+  }
+  .mainHomeContainer,
+.mainContainer,
+.aboutContainer {
   display: flex;
   flex-wrap: wrap;
-  margin: 5px;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 60vh;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  margin-bottom: 100px;
+}
+.homeContainer,
+.projectContainer,
+.videoContainer{
+  margin: 5px;
+  width: 90%;
+  height: 70%;
   border-radius: 5px;
+}
+.sites a {
+  font-size: 20px;
 }
 .homeContainer a,
 .projectContainer a,
@@ -812,72 +852,65 @@ background-color: none;
   width: 100vw;
   text-align: center;
   color: white;
-  font-size: 3vw;
+  font-size: 6vw;
   text-decoration: none;
   margin: 10px;
- border: 2px solid rgb(255, 255, 255);
+  border: 5px inset var(--light);
   border-radius: 25px 50px 25px 50px;
   padding: 10px;
-  background-image: radial-gradient(#042861, #000000);
+  background-color: var(--dark);
 }
-  .react{
-    border: none;
-    background-color: none;
-    }
-    .ring1 {
-      height: 10vw;
-      width: 10vw;
-      border-radius: 100px;
-      animation-name: spin2;
-      animation-duration: 4000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      transform: rotate(3deg);
-      transform: rotate(0.3rad);
-      transform: rotate(3grad);
-      transform: rotate(0.03turn);
-      margin-left: 50px;
-      z-index: 10;
-      margin-right: -130px;
-      margin-bottom: -7px;
-    }
-    .ring2 {
-      height: 14vw;
-      width: 14vw;
-      border-radius: 100px;
-      animation-name: spin3;
-      animation-duration: 3500ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      transform: rotate(3deg);
-      transform: rotate(0.3rad);
-      transform: rotate(3grad);
-      transform: rotate(0.03turn);
-      box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
-      0px 0px 10px 5px rgb(117, 197, 243), 0px 0px 15px 5px rgb(78, 186, 248),
-      0px 0px 25px 5px rgb(0, 0, 0), 0px 0px 35px 5px rgb(0, 0, 0),
-      0px 0px 45px 5px rgb(0, 0, 0);
-      margin-left: 20px;
-      margin-right: -50px;
-      margin-bottom: -25px;
-      background-color: white;
-      z-index: 5;
-      opacity: .4;
-    }
+.demoPhoto {
+  height: 45vh;
+}
+.family {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.family2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.aboutContainer {
+  border: none;
+}
+.aboutContainer p {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+}
+  .page-title {
+  display: none;
+  }
+  .nav-links {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 100%;
+    
+  }
+  
   .nav-links a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-size: 3vw;
+    font-size: 6vw;
     text-align: center;
-    width: 50vw;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     text-decoration: none;
-    
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-  
     border: 2px solid rgb(255, 255, 255);
     border-radius: 25px 50px 25px 50px;
     background-image: radial-gradient(#042861, #000000);
@@ -893,49 +926,503 @@ background-color: none;
     background-color: var(--light);
     margin-bottom: 50px;
   }
-  .contact {
-    width: 80px;
-    height: 80px;
+  .contact{
+    width: 20px;
+    height: 20px;
     border-radius: 50px;
   }
   .footer {
+    display: none;
+  }
+
+  .footerContainer {
+    display: none;
+  }
+ 
+  .contactRing,
+  .ring,
+  .reactLogo,
+  .ring1,
+  .ring2 {
+    display: none;
+  }
+  .reactLogo:hover{
+    display: none;
+  }
+  .submit {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 5vw;
+  }
+}
+@media screen and (min-width: 912px) and (max-width: 1024px) {
+  body {
+    font-family: "Barriecito", cursive;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2{
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-size: 10vw;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    color: white;
+    font-size: 7vw;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  .about {
+    font-size: 6vw;
+  }
+  .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    bottom: 0;
-    margin-bottom: -60px;
-    height: 15vh;
     width: 100%;
-    background-color: var(--light);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+    line-height: 4em;
+    height: 50vh;
   }
-  .reactLogo {
-    margin-left: -42px;
-    margin-bottom: 13px;
-    height: 10%;
-    width: 10%;
-    border-radius: 100px;
-    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
-      0px 0px 10px 5px rgb(117, 197, 243), 0px 0px 15px 5px rgb(78, 186, 248),
-      0px 0px 25px 5px rgb(0, 0, 0), 0px 0px 35px 5px rgb(0, 0, 0),
-      0px 0px 45px 5px rgb(0, 0, 0);
-    animation-name: spin;
-    animation-duration: 5000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: rotate(3deg);
-    transform: rotate(0.3rad);
-    transform: rotate(3grad);
-    transform: rotate(0.03turn);
+  .resumeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .basicInfo h1{
+    font-size: 12vw;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid white;
+  }
+  .careerEd {
+    width: 100%;
+    border: none;
+  }
+  .resume {
+    background-color: #fff;
+    width: 88%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .resume h3 {
+    width: 80%;
+    border-bottom: 2px solid white;
+  }
+  .resume ul {
+    font-size: 7vw;
+    list-style: disc;
+    line-height: 8vh;
+  }
+  .basicInfo {
+    font-size: 6vw;
+     width: 100%;
+  }
+  .mainHomeContainer,
+.mainContainer,
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  margin-bottom: 100px;
+}
+.homeContainer,
+.projectContainer,
+.videoContainer{
+  margin: 5px;
+  width: 90%;
+  height: 70%;
+  border-radius: 5px;
+}
+.sites a {
+  font-size: 20px;
+}
+.homeContainer a,
+.projectContainer a,
+.videoContainer a{
+  width: 100vw;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  text-decoration: none;
+  margin: 10px;
+  border: 5px inset var(--light);
+  border-radius: 25px 50px 25px 50px;
+  padding: 10px;
+  background-color: var(--dark);
+}
+.demoPhoto {
+  height: 45vh;
+}
+.family {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.family2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.aboutContainer {
+  border: none;
+}
+.aboutContainer p {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+}
+  .page-title {
+  display: none;
+  }
+  .nav-links {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 100%;
+    
+  }
+  
+  .nav-links a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px 50px 25px 50px;
+    background-image: radial-gradient(#042861, #000000);
+  }
+  .contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--light);
+    margin-bottom: 50px;
+  }
+  .contact{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+  }
+  .footer {
+    display: none;
+  }
+
+  .footerContainer {
+    display: none;
+  }
+ 
+  .contactRing,
+  .ring,
+  .reactLogo,
+  .ring1,
+  .ring2 {
+    display: none;
   }
   .reactLogo:hover{
-    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255),
-    0px 0px 10px 5px rgb(255, 255, 255), 
-    0px 0px 15px 5px rgb(255, 255, 255),
-    0px 0px 25px 5px rgb(78, 186, 248), 
-    0px 0px 35px 5px rgb(78, 186, 248),
-    0px 0px 45px 5px rgb(78, 186, 248);
+    display: none;
   }
+  .submit {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 5vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    font-family: "Barriecito", cursive;
+    background-color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-size: 8vw;
+    text-align: center;
+    padding: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h2{
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    color: white;
+    font-size: 7vw;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  
+  .about {
+    font-size: 6vw;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    line-height: 5em;
+    height: 80vh;
+  }
+  .resumeContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .basicInfo h1{
+    font-size: 12vw;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid white;
+  }
+  .careerEd {
+    width: 100%;
+    border: none;
+  }
+  .resume {
+    background-color: #fff;
+    width: 88%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .resume h3 {
+    width: 80%;
+    border-bottom: 2px solid white;
+  }
+  .resume ul {
+    font-size: 7vw;
+    list-style: disc;
+    line-height: 8vh;
+  }
+  .basicInfo {
+    font-size: 6vw;
+     width: 100%;
+  }
+  .mainHomeContainer,
+.mainContainer,
+.aboutContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+  align-items: center;
+  margin-bottom: 100px;
+}
+.homeContainer,
+.projectContainer,
+.videoContainer{
+  margin: 5px;
+  width: 90%;
+  height: 70%;
+  border-radius: 5px;
+}
+.sites a {
+  font-size: 20px;
+}
+.homeContainer a,
+.projectContainer a,
+.videoContainer a{
+  width: 100vw;
+  text-align: center;
+  color: white;
+  font-size: 6vw;
+  text-decoration: none;
+  margin: 10px;
+  border: 5px inset var(--light);
+  border-radius: 25px 50px 25px 50px;
+  padding: 10px;
+  background-color: var(--dark);
+}
+.demoPhoto {
+  height: 45vh;
+}
+.family {
+  width: 100%;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.family2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.aboutContainer {
+  border: none;
+}
+.aboutContainer p {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 40px;
+}
+  .page-title {
+  display: none;
+  }
+  .nav-links {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 100%;
+    
+  }
+  
+  .nav-links a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px 50px 25px 50px;
+    background-image: radial-gradient(#042861, #000000);
+  }
+  .contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--light);
+    margin-bottom: 50px;
+  }
+  .contact{
+    width: 60px;
+    height: 60px;
+    margin-left: -10px;
+    border-radius: 50px;
+  }
+  .footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+ 
+ 
+  .contactRing,
+  .ring,
+  .reactLogo,
+  .ring1,
+  .ring2 {
+    display: none;
+  }
+  .reactLogo:hover{
+    display: none;
+  }
+  .submit {
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    font-size: 5vw;
+  }
+}
+@media screen and (min-width: 1880px) {
+.contactRing {
+    display: none;
+  }
+  
 }
 /* @media screen and (min-width: 1025px) {
   body {
