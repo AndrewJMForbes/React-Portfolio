@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/React-Portfolio/About/static/css/main.0f4c2ecc.css",
-    "main.js": "/React-Portfolio/About/static/js/main.92b67bab.js",
+    "main.js": "/React-Portfolio/About/static/js/main.cdb74347.js",
     "static/media/mrsforbes.png": "/React-Portfolio/About/static/media/mrsforbes.fb99743f91a6e3169401.png",
     "static/media/moviemixers.png": "/React-Portfolio/About/static/media/moviemixers.1b556b204a6342a6ef67.png",
     "static/media/npm.png": "/React-Portfolio/About/static/media/npm.9a962dc195fbddd30756.png",
@@ -19,17 +19,15 @@
     "static/media/bluering.png": "/React-Portfolio/About/static/media/bluering.9f49d002ee9a86b75af2.png",
     "static/media/sc-bconsult.png": "/React-Portfolio/About/static/media/sc-bconsult.ad32507a316fe5769fa8.png",
     "static/media/comingsoon.jpg": "/React-Portfolio/About/static/media/comingsoon.1137c316767af524aec1.jpg",
-    "static/media/twitter.png": "/React-Portfolio/About/static/media/twitter.d03e57159c126a003f1b.png",
     "static/media/w3schools.png": "/React-Portfolio/About/static/media/w3schools.c55addc9f9b3fa608a07.png",
     "static/media/logo-react-icon.png": "/React-Portfolio/About/static/media/logo-react-icon.283bf42c605cfc49cf49.png",
     "static/media/dayplanner.png": "/React-Portfolio/About/static/media/dayplanner.2777cacfe73a976d367c.png",
-    "static/media/LinkedIn_logo_initials.png": "/React-Portfolio/About/static/media/LinkedIn_logo_initials.e9db41041d38d6fb97b4.png",
     "index.html": "/React-Portfolio/About/index.html",
     "main.0f4c2ecc.css.map": "/React-Portfolio/About/static/css/main.0f4c2ecc.css.map",
-    "main.92b67bab.js.map": "/React-Portfolio/About/static/js/main.92b67bab.js.map"
+    "main.cdb74347.js.map": "/React-Portfolio/About/static/js/main.cdb74347.js.map"
   },
   "entrypoints": [
     "static/css/main.0f4c2ecc.css",
-    "static/js/main.92b67bab.js"
+    "static/js/main.cdb74347.js"
   ]
 }
