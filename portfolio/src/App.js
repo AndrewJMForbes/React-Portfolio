@@ -1,4 +1,5 @@
 import "./App.css";
+import { Navigate } from "react-router-dom";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Reference from "./pages/Reference";
