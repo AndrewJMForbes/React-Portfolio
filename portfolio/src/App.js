@@ -4,8 +4,8 @@ import About from "./components/About";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Reference from "./pages/Reference";
-import Projects from "./pages/Projects";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
