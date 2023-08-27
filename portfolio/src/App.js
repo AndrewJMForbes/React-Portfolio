@@ -15,22 +15,7 @@ function App() {
   return (
     <div>
 <div className="bodyContainer">
-    <Router>
-      <div className="App">
-        <Header />
-        <nav className="nav-links">
-          <Link to="/">Home</Link>
-          <Link to="/Projects">Projects</Link>
-          <Link to="/Reference">Reference Tools</Link>
-          <Link to="/Resume">Resume</Link>
-          <Link to="/Contact">Contact</Link>
-        </nav>
-        <h1 className="page-title">About Me</h1>
-
-<div className="aboutContainer">
-  <img className="family" src={family1} alt="something" />
-
-  <div className="about">
+<div className="about">
     <p>
       My name is Andrew Forbes I am a proud Husband and father. I've been
       working on websites for about 10 years off and on but 5 months ago I started a coding Bootcamp through Northwestern University in order to find a job as a Frontend/Fullstack web developer. I've been
@@ -50,6 +35,22 @@ function App() {
     </p>
   </div>
   <img className="family2" src={family2} alt="something" />
+    <Router>
+      <div className="App">
+        <Header />
+        <nav className="nav-links">
+          <Link to="/">Home</Link>
+          <Link to="/Projects">Projects</Link>
+          <Link to="/Reference">Reference Tools</Link>
+          <Link to="/Resume">Resume</Link>
+          <Link to="/Contact">Contact</Link>
+        </nav>
+        <h1 className="page-title">About Me</h1>
+
+<div className="aboutContainer">
+  <img className="family" src={family1} alt="something" />
+
+  
 </div>
       </div>
       <Routes>
