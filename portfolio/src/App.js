@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Reference from "./pages/Reference";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
@@ -13,11 +13,10 @@ function App() {
     <div>
 <div className="bodyContainer">
     <Router>
-
       <div className="App">
         <Header />
         <nav className="nav-links">
-          <Link to="/Home">Home</Link>
+          <Link to="/">Home</Link>
           <Link to="/Projects">Projects</Link>
           <Link to="/Reference">Reference Tools</Link>
           <Link to="/Resume">Resume</Link>
@@ -25,14 +24,22 @@ function App() {
 
         </nav>
       </div>
-    <Switch>
-
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/Projects" element={<Projects />} />
-        <Route exact path="/Reference" element={<Reference />} />
-        <Route exact path="/Contact" element={<Contact />} />
-        <Route exact path="/Resume" element={<Resume />} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route path="/Projects" element={<Projects />} />
+      </Routes>
+      <Routes>
+        <Route path="/Reference" element={<Reference />} />
+      </Routes>
+      <Routes>
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+      <Routes>
+        <Route path="/Resume" element={<Resume />} />
+      </Routes>
+     
     </Router>
 
     </div>
