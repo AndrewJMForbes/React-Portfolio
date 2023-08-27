@@ -30,7 +30,7 @@ function Projects() {
       <Link to=" https://andrewjmforbes.github.io/Daily-planner/"><img className="demoPhoto" src={Screenshot8} alt='something'/></Link>
       </div>
       <div className="projectContainer">  
-      <a className="sites" href="https://github.com/Project01Team02/movie-mixers">Movie Mixers</a>
+      <a className="sites" href="https://project01team02.github.io/movie-mixers/">Movie Mixers</a>
       <Link to="https://github.com/Project01Team02/movie-mixers"><img className="demoPhoto" src={Screenshot2} alt='something'/></Link>
       </div>
 
