@@ -6,8 +6,8 @@ import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
-import family1 from "../images/FamilyNew.jpg";
-import family2 from "../images/family.jpg";
+import family1 from "../src/images/FamilyNew.jpg";
+import family2 from "../src/images/family.jpg";
 
 
 
