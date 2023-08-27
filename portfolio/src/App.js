@@ -17,7 +17,7 @@ function App() {
       <div className="App">
         <Header />
         <nav className="nav-links">
-          <Link to="/">Home</Link>
+          <Link to="/Home">Home</Link>
           <Link to="/Projects">Projects</Link>
           <Link to="/Reference">Reference Tools</Link>
           <Link to="/Resume">Resume</Link>
