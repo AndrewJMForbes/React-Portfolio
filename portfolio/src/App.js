@@ -27,7 +27,7 @@ function App() {
         </nav>
       </div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
       </Routes>
       <Routes>
         <Route path="/Projects" element={<Projects />} />
@@ -43,7 +43,7 @@ function App() {
       </Routes>
      
     </Router>
-    <About />
+    {/* <About /> */}
     </div>
     <Footer />
     </div>
