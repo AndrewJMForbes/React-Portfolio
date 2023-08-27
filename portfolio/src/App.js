@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Reference from "./pages/Reference";
 import Projects from "./pages/Projects";
-import About from "./pages/About";
+import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
@@ -17,7 +17,7 @@ function App() {
       <div className="App">
         <Header />
         <nav className="nav-links">
-          <Link to="/">About Me</Link>
+          <Link to="/">Home</Link>
           <Link to="/Projects">Projects</Link>
           <Link to="/Reference">Reference Tools</Link>
           <Link to="/Resume">Resume</Link>
@@ -26,7 +26,7 @@ function App() {
         </nav>
       </div>
       <Routes>
-        <Route path="/" element={<About />} />
+        <Route path="/" element={<Home />} />
       </Routes>
       <Routes>
         <Route path="/Projects" element={<Projects />} />
