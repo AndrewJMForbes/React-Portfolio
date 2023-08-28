@@ -1,7 +1,8 @@
 import "./App.css";
 import Header from "./components/Header";
+// import About from "./components/About";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Reference from "./pages/Reference";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
@@ -26,23 +27,15 @@ function App() {
         </nav>
       </div>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-      </Routes>
-      <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/Projects" element={<Projects />} />
-      </Routes>
-      <Routes>
         <Route path="/Reference" element={<Reference />} />
-      </Routes>
-      <Routes>
         <Route path="/Contact" element={<Contact />} />
-      </Routes>
-      <Routes>
         <Route path="/Resume" element={<Resume />} />
       </Routes>
      
     </Router>
-    
+    {/* <About /> */}
     </div>
     <Footer />
     </div>

@@ -13,8 +13,9 @@ const handleFormSubmit = (e) => {
   setName("");
 };
 
-// const handleInputChange = (e) => {
-//   const { name, value } = e.target;
+const handleInputChange = (e) => {
+  const { name, value } = e.target;
+}
   
 //   return name === "name" ? setName(value) : email === "email" ?
 //   setEmail(value) : textarea === "textarea" ? setTextarea(value) : setTextarea(value) 
@@ -27,7 +28,7 @@ const handleFormSubmit = (e) => {
       <input 
       type="text" 
       value={name}
-      // onChange={handleInputChange}
+      onChange={handleInputChange}
       placeholder="Enter your name"/>
       <label className="email">Email</label>
       <input 
