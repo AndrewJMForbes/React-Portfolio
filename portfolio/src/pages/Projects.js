@@ -17,7 +17,7 @@ import { Link } from "react-router-dom"
 
 function Projects() {
   return (
-    <div> 
+    <> 
 
       <h2>Take a look at the sites I've worked on! 👀</h2>
     <div className="mainContainer">
@@ -76,7 +76,7 @@ function Projects() {
       </div>
    
     </div>
-    </div>
+    </>
   )
 }
 export default Projects;

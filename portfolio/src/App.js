@@ -1,6 +1,5 @@
 import "./App.css";
 import Header from "./components/Header";
-// import About from "./components/About";
 import Footer from "./components/Footer";
 import { HashRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Reference from "./pages/Reference";
@@ -35,7 +34,6 @@ function App() {
       </Routes>
      
     </Router>
-    {/* <About /> */}
     </div>
     <Footer />
     </div>

@@ -3,7 +3,7 @@ import family2 from "../images/family.jpg";
 
 function About() {
   return (
-    <div>
+    <>
       <h1 className="page-title">About Me</h1>
 
       <div className="aboutContainer">
@@ -30,7 +30,7 @@ function About() {
         </div>
         <img className="family2" src={family2} alt="something" />
       </div>
-    </div>
+    </>
   );
 }
 

@@ -7,7 +7,7 @@ import photo6 from "../images/bootstrap.png";
 import { Link } from "react-router-dom";
 function Home() {
   return (
-    <div>
+    <>
     <h2>⇩ These are sites that I use as reference tools ⇩</h2>
       <div className="mainHomeContainer">
         <div className="homeContainer">
@@ -68,7 +68,7 @@ function Home() {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 export default Home;
